@@ -78,6 +78,7 @@ class StickyTest {
         int count = testSticky("t1", false);
         System.out.println(count);
         Assertions.assertTrue(count > 0 && count <= runs);
+        System.out.println(count);
     }
 
     @Test
