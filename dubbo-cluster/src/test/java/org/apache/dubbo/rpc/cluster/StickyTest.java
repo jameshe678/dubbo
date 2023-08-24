@@ -68,7 +68,7 @@ class StickyTest {
 
         invokers.add(invoker1);
         invokers.add(invoker2);
-
+        System.out.println(dic.getUrl());
         clusterinvoker = new StickyClusterInvoker<StickyTest>(dic);
 
     }
@@ -79,6 +79,7 @@ class StickyTest {
         System.out.println(count);
         Assertions.assertTrue(count > 0 && count <= runs);
         System.out.println(count);
+
     }
 
     @Test
