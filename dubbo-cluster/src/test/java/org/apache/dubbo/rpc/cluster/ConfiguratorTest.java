@@ -49,6 +49,7 @@ class ConfiguratorTest {
         // The hosts of AbsentConfigurator and OverrideConfigurator are equal, but the priority of OverrideConfigurator is higher
         Assertions.assertTrue(configurators.get(0) instanceof AbsentConfigurator);
         Assertions.assertTrue(configurators.get(1) instanceof OverrideConfigurator);
+        System.out.println(configurators.get(0));
     }
 
 }
